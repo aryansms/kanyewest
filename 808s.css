@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #aaaaaa, #aaaaaa 10%, #d39a9a 10%, #d39a9a 20%, #7e6968 50%, #dd6e6e 60%, #7e6968 60%, #796161 70%, #af3636 80%, #af3636 90%, #c01616 90%, #c01616);
+  background-size: 1100% 100%;
+  animation: body-gradient 12s linear infinite;
+}
+
+@keyframes body-gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1100% 0;
+  }
+}
+
+
+.option-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #333; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  margin-right: 8px; 
+  vertical-align: middle; 
+}
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  border-bottom: 2px solid #888888;
+  z-index: 1000;
+}
+
+.header-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px; 
+    background-color: transparent;
+    color: #686868;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+  }
+  
+
+.dropbtn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 2px solid #ffffff; 
+  border-radius: 10px; 
+  background-color: transparent;
+  color: #686868;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3e413e;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  color: white;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #303030;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #404240;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-box {
+    width: 45%;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-size-adjust: 100;
+}
+
+.left-box h1 {
+    font-size: 2.5rem; 
+}
+
+.left-box p {
+    font-size: 1.6rem; 
+}
+
+
+.right-box {
+    width: 45%;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.album-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.audio-player {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ffffff; 
+    border-radius: 0; 
+    overflow: hidden;
+}
+
+.audio-player audio {
+    width: 100%;
+    border: none; 
+}
+
+/* modifiable rb text */
+.rainbow-text {
+    background-image: linear-gradient(to left,rgb(182, 32, 32), rgb(126, 64, 64), rgb(141, 49, 49), rgb(148, 80, 80), rgb(170, 25, 25));
+    background-size: 200% 100%;
+    background-position: right bottom;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-gradient 3s ease-in infinite;
+  }
+
+  @keyframes rainbow-gradient {
+    0% {
+      background-position: left bottom;
+    }
+    50% {
+      background-position: right bottom;
+    }
+    100% {
+      background-position: left bottom;
+    }
+  }
+
+.asterisk {
+    font-size: 0.5rem;
+}

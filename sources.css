@@ -1,0 +1,38 @@
+
+body {
+    color: #00ff00;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to right, #000000, #021100);
+    background-size: 1100% 100%;
+    animation: body-gradient 60s linear infinite;
+  }
+  
+  @keyframes body-gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 1100% 0;
+    }
+  }
+
+.typewriter {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.home {
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Courier Prime', monospace;
+    font-weight: 600;
+    color: #12ff12;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap')
