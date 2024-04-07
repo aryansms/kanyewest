@@ -1,0 +1,1 @@
+const scrollTrigger = document.querySelector('.scroll-trigger');
